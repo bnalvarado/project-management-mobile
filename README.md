@@ -8,7 +8,7 @@ Tecnologías:
 https://www.npmjs.com/get-npm
   - Node versión v8.12.0 (última estable)
 https://github.com/creationix/nvm
-    > Usar NVM (Node version manager) para installar y
+    > Usar NVM (Node version manager) para instalar y
 manejar de manera más sencilla las versiones.
 
 # Desarrollo
