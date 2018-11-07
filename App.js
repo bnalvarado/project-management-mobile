@@ -1,21 +1,47 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { YellowBox } from 'react-native';
+import { createStackNavigator } from 'react-navigation';
+import Login from './Login';
+import Dashboard from './Dashboard';
+import Airport from './Airport';
+import History from './History';
+import Alert from './Alert';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    );
-  }
-}
+YellowBox.ignoreWarnings([
+  'Warning: componentWillMount is deprecated',
+  'Warning: componentWillReceiveProps is deprecated'
+]);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+export default createStackNavigator({
+  login: {
+    screen: Login,
+    navigationOptions: () => ({
+      title: 'Login Page',
+    }),
+  },
+  dashboard: {
+    screen: Dashboard,
+    navigationOptions: () => ({
+      title: 'Dashboard',
+    }),
+  },
+  airport: {
+    screen: Airport,
+    navigationOptions: () => ({
+      title: 'Airport Lookup',
+    }),
+  },
+  history: {
+    screen: History,
+    navigationOptions: () => ({
+      title: 'Historical Flight Status',
+    }),
+  },
+  alerts: {
+    screen: Alert,
+    navigationOptions: () => ({
+      title: 'Trip & Agent Alerts',
+    }),
   },
 });

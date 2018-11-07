@@ -10,6 +10,10 @@ https://www.npmjs.com/get-npm
 https://github.com/creationix/nvm
     > Usar NVM (Node version manager) para instalar y
 manejar de manera más sencilla las versiones.
+  - Android SDK
+https://www.androidcentral.com/installing-android-sdk-windows-mac-and-linux-tutorial
+  - Genymotion (Emulador para dispositivos Android)
+https://www.genymotion.com/
 
 # Desarrollo
 
