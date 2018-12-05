@@ -12,6 +12,7 @@ YellowBox.ignoreWarnings([
   'Warning: componentWillMount is deprecated',
   'Warning: componentWillReceiveProps is deprecated'
 ]);
+console.disableYellowBox = true;
 
 export default createStackNavigator({
   
